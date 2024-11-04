@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:id="@+id/txtDNWisata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Detail Wisata"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgDWisata"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/jamgadang" />
+
+        <TextView
+            android:id="@+id/txtDeskWisata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="30sp"
+            android:text="Destinasi yang tidak boleh dilewatkan kalau kamu berkunjung ke Bukittinggi pastilah Jam Gadang. Jam di menara berukuran 13×4 meter ini berada di kawasan Taman Sabai Nan Aluih. Berlokasi di taman, Jam Gadang memiliki suasana yang rindang dengan adanya sejumlah pepohonan hijau."
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <fragment
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mapWisata"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            map:cameraBearing="112.5"
+            map:cameraTargetLat="-0.3051816"
+            map:cameraTargetLng="150.922433"
+            map:cameraTilt="30"
+            map:cameraZoom="13"
+            map:mapType="normal"
+            map:uiCompass="false"
+            map:uiRotateGestures="true"
+            map:uiScrollGestures="false"
+            map:uiTiltGestures="true"
+            map:uiZoomControls="false"
+            map:uiZoomGestures="true"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="30sp" />
+
+        <Button
+            android:id="@+id/btnMaps2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:backgroundTint="#C5BDB9"
+            android:text="Lihat Map Wisata"
+            android:textColor="#020202" />
+
+</LinearLayout>
